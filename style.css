@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(80, 156, 228);
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  padding: 5px;
+}
+
+.card {
+  width: 60%;
+  height: 20%;
+  margin: 10px 0px;
+}
+
+.card img {
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+}
+.swing {
+  transition: all 0.5s;
+  border: Thin solid #eeeeee;
+  border-radius: 25%;
+}
+.swing:hover {
+  border: Thin solid #10056e;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(5px 7px 1px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(5px 7px 1px rgba(0, 0, 0, 0.5));
+  -webkit-transform: rotateZ(-360deg) scale(1.5);
+  transform: rotateZ(-360deg) scale(1.5);
+}
+
+.qualidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  padding: 5px;
+}
+
+/*
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  border-radius: 10px;
+}
+
+.button {
+  width: 60%;
+  height: 100%;
+}
+
+#button {
+  width: 100%;
+  background-color: red;
+  border-radius: 50%;
+}
+
+span {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  width: 200px;
+}
+canvas {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  margin-top: -30px;
+}
+*/
