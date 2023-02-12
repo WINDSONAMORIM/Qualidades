@@ -1,4 +1,64 @@
-(function () {
+const card1 = document.getElementById("card1");
+const card2 = document.getElementById("card2");
+const card3 = document.getElementById("card3");
+const card4 = document.getElementById("card4");
+const listCard1 = document.getElementById("listCard1");
+const listCard2 = document.getElementById("listCard2");
+const listCard3 = document.getElementById("listCard3");
+const listCard4 = document.getElementById("listCard4");
+
+listCard1.style.display = "none";
+listCard2.style.display = "none";
+listCard3.style.display = "none";
+listCard4.style.display = "none";
+
+card1.addEventListener("click", (e) => {
+  if (listCard1.style.display == "none") {
+    listCard1.style.display = "block";
+    listCard2.style.display = "none";
+    listCard3.style.display = "none";
+    listCard4.style.display = "none";
+  } else if (listCard1.style.display == "block") {
+    listCard1.style.display = "none";
+  }
+});
+
+card2.addEventListener("click", (e) => {
+  if (listCard2.style.display == "none") {
+    listCard2.style.display = "block";
+    listCard1.style.display = "none";
+    listCard3.style.display = "none";
+    listCard4.style.display = "none";
+  } else if (listCard2.style.display == "block") {
+    listCard2.style.display = "none";
+  }
+});
+
+card3.addEventListener("click", (e) => {
+  if (listCard3.style.display == "none") {
+    listCard3.style.display = "block";
+    listCard1.style.display = "none";
+    listCard2.style.display = "none";
+    listCard4.style.display = "none";
+  } else if (listCard3.style.display == "block") {
+    listCard3.style.display = "none";
+  }
+});
+
+card4.addEventListener("click", (e) => {
+  if (listCard4.style.display == "none") {
+    listCard4.style.display = "block";
+    listCard1.style.display = "none";
+    listCard2.style.display = "none";
+    listCard3.style.display = "none";
+  } else if (listCard4.style.display == "block") {
+    listCard4.style.display = "none";
+  }
+});
+
+//});
+
+/*(function () {
   const startBtn = document.getElementById("button");
   const canvas = document.getElementById("canvas");
   var requestID;
@@ -92,4 +152,4 @@
     // Draw the initial box on the canvas.
     ctx.fillRect(posX, 0, boxWidth, canvas.height);
   });
-})();
+})();*/

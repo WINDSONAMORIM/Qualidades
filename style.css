@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("./assests/img/background.jpg");
+}
+
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(80, 156, 228);
   display: flex;
   flex-direction: row;
 }
@@ -29,7 +32,6 @@
 }
 
 .card img {
-  background-color: yellow;
   width: 100%;
   height: 100%;
 }
@@ -50,45 +52,29 @@
 .qualidades {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   height: 100%;
   padding: 5px;
 }
 
-/*
-#canvas {
+#title {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  top: 0%;
   width: 100%;
-  height: 100%;
-}
-
-canvas {
-  border-radius: 10px;
-}
-
-.button {
-  width: 60%;
-  height: 100%;
-}
-
-#button {
-  width: 100%;
-  background-color: red;
-  border-radius: 50%;
-}
-
-span {
-  position: absolute;
+  padding: 5px;
   color: white;
-  text-transform: uppercase;
-  width: 200px;
 }
-canvas {
-  margin: 0;
-  padding: 0;
-  display: block;
-  position: absolute;
-  margin-top: -30px;
+
+#lista {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  color: white;
 }
-*/
